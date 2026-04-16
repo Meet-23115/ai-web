@@ -16,17 +16,7 @@ export default function Footer() {
             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed max-w-xs">
               The fastest way to integrate AI capabilities into any application — no ML expertise required.
             </p>
-            <div className="flex gap-3 mt-4">
-              {[Github, Twitter, Linkedin].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="p-2 rounded-lg text-slate-400 hover:text-indigo-500 hover:bg-indigo-50 dark:hover:bg-indigo-500/10 transition-colors"
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
-            </div>
+            
           </div>
 
           <div>

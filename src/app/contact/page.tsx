@@ -4,17 +4,12 @@ import { useState } from 'react';
 import { Mail, MessageSquare, MapPin, Clock, Send, Github, Twitter, Linkedin } from 'lucide-react';
 
 const contacts = [
-  { icon: Mail, label: 'Email', value: 'hello@plugandplayai.com', href: 'mailto:hello@plugandplayai.com' },
-  { icon: MessageSquare, label: 'Discord', value: 'Join our community', href: '#' },
-  { icon: MapPin, label: 'Location', value: 'Remote-first, global team', href: null },
+  { icon: Mail, label: 'Email', value: 'info@plugandplayai.in', href: 'mailto:info@plugandplayai.in' },
+  { icon: MessageSquare, label: 'Contact Number', value: '+91 96604 32253', href: 'tel:+919660432253' },
   { icon: Clock, label: 'Response time', value: 'Within 24 hours', href: null },
 ];
 
-const socials = [
-  { icon: Github, label: 'GitHub', href: '#' },
-  { icon: Twitter, label: 'Twitter', href: '#' },
-  { icon: Linkedin, label: 'LinkedIn', href: '#' },
-];
+
 
 export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
@@ -71,29 +66,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div>
-              <h3 className="text-sm font-semibold mb-3 text-slate-500 dark:text-slate-400 uppercase tracking-wide">Follow us</h3>
-              <div className="flex gap-3">
-                {socials.map(({ icon: Icon, label, href }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    aria-label={label}
-                    className="p-2.5 rounded-xl border border-slate-200 dark:border-white/10 hover:border-indigo-400 dark:hover:border-indigo-400 hover:text-indigo-500 transition-colors"
-                  >
-                    <Icon size={18} />
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div className="card-glass p-5">
-              <div className="text-sm font-semibold mb-2">Looking for docs?</div>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-3">
-                Check our documentation for integration guides, API references, and quickstarts.
-              </p>
-              <a href="#" className="text-sm text-indigo-500 font-medium hover:underline">Browse docs →</a>
-            </div>
+            
           </div>
 
           {/* Contact form */}
